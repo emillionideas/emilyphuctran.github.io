@@ -1,34 +1,14 @@
 body {
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Lora', serif;
     background-color: #ffffff;
     color: #222222;
+    line-height: 1.6;
   }
   
   h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: #222222;
-  }
-  
-  a {
-    color: #222222;
-    text-decoration: underline;
-  }
-  
-  a:hover {
-    color: #AD8A8A;
-  }
-  
-  header {
-    background-color: #EFEFEF;
-  }
-  
-  footer {
-    background-color: #EFEFEF;
-    color: #666;
-  }
-  
-  .project img {
-    border: 1px solid #E3BEBE;
-    border-radius: 8px;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.5rem;
   }  
