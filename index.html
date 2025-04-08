@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emily Tran | Designer</title>
+  <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
   
@@ -42,5 +43,25 @@
   <footer>
     <p>&copy; 2025 Emily Tran</p>
   </footer>
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+  
+    // Check for saved preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark-mode');
+    }
+  
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+  
+      // Save preference
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  </script>  
 </body>
 </html>

@@ -1,51 +1,22 @@
-body {
+/* ---------------------------------- */
+/* Base Reset & Typography */
+/* ---------------------------------- */
+
+html {
+    font-size: 16px; /* base size */
+  }
+  
+  body {
     font-family: 'Lora', serif;
     background-color: #ffffff;
     color: #222222;
     line-height: 1.6;
-  }  
-
-  html {
-    font-size: 16px; /* base size */
-  }
-
-  header, footer {
-    background-color: #F5F5F5;
-    color: #555;
-  }  
-  
-  h1 {
-    font-size: 2.5rem;   /* ~40px */
-    line-height: 1.2;
-  }
-  
-  h2 {
-    font-size: 2rem;     /* ~32px */
-    line-height: 1.3;
-  }
-  
-  h3 {
-    font-size: 1.5rem;   /* ~24px */
-    line-height: 1.4;
   }
   
   p, li {
-    font-size: 1rem;     /* 16px */
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
-  
-  .tagline {
-    font-size: 1.125rem; /* ~18px */
-    font-style: italic;
-    color: #555;
-  }  
-  
-  h1, h2, h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    color: #222222;
-    letter-spacing: 0.2px;
-    margin-bottom: 0.5rem;
-  }  
   
   a {
     color: #222222;
@@ -54,14 +25,94 @@ body {
   
   a:hover {
     color: #AD8A8A;
-  }  
-
-  .project img {
-    border: 1px solid #E3BEBE;
-    border-radius: 8px;
-  }  
-
+  }
+  
+  /* ---------------------------------- */
+  /* Headings */
+  /* ---------------------------------- */
+  
+  h1, h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
   @media (min-width: 768px) {
     h1 { font-size: 3rem; }
     h2 { font-size: 2.25rem; }
+  }
+  
+  /* ---------------------------------- */
+  /* Layout Spacing */
+  /* ---------------------------------- */
+  
+  main {
+    padding: 2rem
+  }  
+
+  /* ---------------------------------- */
+  /* Dark Mode */
+  /* ---------------------------------- */
+
+  #dark-mode-toggle {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: #EFEFEF;
+  }  
+
+  body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #f0f0f0;
+}
+  
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer {
+    background-color: #2b2b2b;
+    color: #ccc;
+  }
+  
+  body.dark-mode a {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode a:hover {
+    color: #E3BEBE;
+  }
+  
+  body.dark-mode #dark-mode-toggle {
+    border-color: #444;
+    color: #f0f0f0;
+    background-color: #333;
   }  
