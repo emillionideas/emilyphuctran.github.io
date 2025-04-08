@@ -70,20 +70,26 @@ html {
   /* ---------------------------------- */
   /* Dark Mode */
   /* ---------------------------------- */
-
+  header {
+    position: relative;
+  }
+  
   #dark-mode-toggle {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
     background: none;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    color: inherit;
+    padding: 0.5rem;
+    z-index: 1000; /* make sure it stays on top */
+    transition: transform 0.2s ease;
   }
   
   #dark-mode-toggle:hover {
-    background-color: #EFEFEF;
+    transform: scale(1.1);
   }  
 
   body.dark-mode h1,
