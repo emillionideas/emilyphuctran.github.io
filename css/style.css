@@ -3,11 +3,16 @@ body {
     background-color: #ffffff;
     color: #222222;
     line-height: 1.6;
-  }
+  }  
 
   html {
     font-size: 16px; /* base size */
   }
+
+  header, footer {
+    background-color: #F5F5F5;
+    color: #555;
+  }  
   
   h1 {
     font-size: 2.5rem;   /* ~40px */
@@ -36,10 +41,24 @@ body {
   
   h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #222222;
     letter-spacing: 0.2px;
     margin-bottom: 0.5rem;
+  }  
+  
+  a {
+    color: #222222;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #AD8A8A;
+  }  
+
+  .project img {
+    border: 1px solid #E3BEBE;
+    border-radius: 8px;
   }  
 
   @media (min-width: 768px) {
