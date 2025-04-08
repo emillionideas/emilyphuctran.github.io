@@ -122,3 +122,76 @@ body.dark-mode h3 {
     color: #f0f0f0;
     background-color: #333;
   }  
+
+    /* ---------------------------------- */
+  /* Project */
+  /* ---------------------------------- */
+
+  .project {
+    border: 1px solid #E3BEBE;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .project a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .project-image {
+    overflow: hidden;
+  }
+
+  .project a:hover .project-image img {
+    transform: scale(1.03);
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #E3BEBE;
+    border-radius: 8px;
+  }
+  
+  .project h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }  
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
